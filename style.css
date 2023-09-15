@@ -3,10 +3,45 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 section {
-    height: 100vh;
-    width: 100vh;  
+     height: 100vh;
+    /* width: 100vh;   */ 
     text-align: center;
 }
+
+/* section:nth-child(n){
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+} */
+
+/* section:nth-child(n){
+    background-color: rgb(50, 168, 82);
+} */
+
+section:nth-child(odd) { 
+    background: linear-gradient(-25deg, #fdcd3b 30%, #ffed4b 30%);; 
+}
+
+section:nth-child(even) { 
+    background: linear-gradient(0deg, #135CA3, 30%,dodgerblue 30%);
+}
+
+section:nth-child(3n) { 
+    /* background: linear-gradient(calc(3*110deg), mediumorchid 30%, #9544A9 30%);  */
+    background: linear-gradient(25deg,#9544A9 30%,mediumorchid 30%);  
+}
+
+section:nth-child(4n){
+    background: linear-gradient(-205deg,#15726D , 30%, lightseagreen 30%);
+}
+
+ section:nth-child(5n){
+    background: linear-gradient(180deg, #E5593F , 30%, tomato 30%);
+}
+
+section:nth-child(6n){
+    background: linear-gradient(205deg, #759C64 , 30%, #93C47D 30%);
+} 
