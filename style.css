@@ -1,15 +1,12 @@
 
-html {
-    scroll-snap-type: y mandatory;
-}
 
-body {
+/* body {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-}
+} */
 
 section {
      height: 100vh;
@@ -17,6 +14,17 @@ section {
     text-align: center;
     scroll-snap-align: start;
     scroll-snap-stop: always; /* works with mobile scrolling(fast scrolling), the 'always' value stops in the next section instead of passing number of sections like in 'normal' value */
+}
+
+html {
+    scroll-snap-type: y mandatory;  /* y or x direction, 'mandatory' will snap directly, 'proximity' will snap when near to the section */
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: silver;
+    height: 2.5rem;
 }
 
 /* section:nth-child(n){
