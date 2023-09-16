@@ -1,4 +1,8 @@
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -11,6 +15,8 @@ section {
      height: 100vh;
     /* width: 100vh;   */ 
     text-align: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always; /* works with mobile scrolling(fast scrolling), the 'always' value stops in the next section instead of passing number of sections like in 'normal' value */
 }
 
 /* section:nth-child(n){
