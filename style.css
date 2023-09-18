@@ -41,6 +41,7 @@ section {
 
 html {
     scroll-snap-type: y mandatory;  /* y or x direction, 'mandatory' will snap directly, 'proximity' will snap when near to the section */
+    scroll-padding-top: 2.5rem; /* either set the scroll padding value here or we could also set the scroll-margin-top value in the section */
 }
 
 nav {
