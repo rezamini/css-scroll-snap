@@ -51,8 +51,9 @@ nav {
     text-align: center;
     height: 2.5rem;
     font-size: 17px;
+    /* line heigh will center the text vertically, value should be same as height value */
+    line-height: 2.5rem;
 }
-
 
 /* section:nth-child(n){
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
